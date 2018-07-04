@@ -57,21 +57,21 @@ environments:
         password: '{{@Vault.FxLabs/DevMachinePassword}}'
 # Job profiles
 jobs:
-  - name: Stg
-    environment: Stg
+  - name: Stg1
+    environment: Stg1
     tags:
       - V1
     regions: FxLabs/US_WEST_1
     cron: '0 30 * ? * *'
     #issueTracker: FxLabs/Stg-GitHub-Bot
-  - name: Local
-    environment: Local
+  - name: Local1
+    environment: Local1
     tags:
       - V1
     regions: FxLabs/US_WEST_1
     issueTracker: FxLabs/IT-Test
-  - name: SANDBOX
-    environment: Dev
+  - name: SANDBOX1
+    environment: Dev1
     tags:
       - SANDBOX
     regions: FxLabs/US_WEST_1
